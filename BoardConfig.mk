@@ -48,3 +48,4 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_CPU_TEMP := true
 TW_INCLUDE_CRYPTO := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
