@@ -29,6 +29,10 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# EXFAT implementation (not ready yet
+# TARGET_KERNEL_HAVE_EXFAT := true
+# TW_NO_EXFAT_FUSE := true
+
 # TWRP-Specific
 TARGET_RECOVERY_FSTAB := device/bq/krillin/recovery/etc/twrp.fstab
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
@@ -44,6 +48,7 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0/gadget/lun0/file
 TW_MAX_BRIGHTNESS := 255
+TW_DEFAULT_BRIGHTNESS := 150
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
