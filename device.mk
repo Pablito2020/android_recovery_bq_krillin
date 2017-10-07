@@ -11,7 +11,8 @@ endif
 # Copy necessary files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/kernel/kernel:kernel \
-    $(LOCAL_PATH)/recovery/sbin/healthd:root/sbin/healthd
+    $(LOCAL_PATH)/recovery/sbin/healthd:root/sbin/healthd \
+    $(LOCAL_PATH)/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Call the necesary libraries from twrp
 $(call inherit-product, build/target/product/full.mk)
