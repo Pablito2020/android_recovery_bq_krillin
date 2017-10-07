@@ -19,6 +19,3 @@ $(call inherit-product, build/target/product/full.mk)
 
 # BQ Aquaris E4.5 specific
 PRODUCT_NAME := krillin
-DEVICE_RESOLUTION := 540x960
-DEVICE_SCREEN_WIDTH := 540
-DEVICE_SCREEN_HEIGHT := 960
